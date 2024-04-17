@@ -1,0 +1,15 @@
+name: "demo-action"
+on:
+  workflow_dispatch:
+# 任务
+jobs:
+  build:
+    # 设置环境
+    runs-on: ubuntu-latest
+    steps:
+    - name: install
+      run: echo Hello,World!
+    - name: build
+      run: echo Hello,World!
+    - name: Run a one-line script
+      run: echo Hello,World!
