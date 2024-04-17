@@ -17,4 +17,4 @@ export default defineConfig(({ mode }) => {
       }
     }
   }
-})
+}) as import('vite').UserConfig
