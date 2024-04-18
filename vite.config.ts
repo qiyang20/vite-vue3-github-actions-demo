@@ -6,11 +6,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
-  const isProd = mode === 'production'
-  const base = isProd ? '/vite-vue3-github-actions-demo/' || '/' : './'
+export default defineConfig(() => {
   return {
-    base,
     plugins: [vue(), vueJsx(), VueDevTools()],
     resolve: {
       alias: {
